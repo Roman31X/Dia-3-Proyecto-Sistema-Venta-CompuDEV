@@ -1,2 +1,4 @@
-package com.roman31X.aplicaionComputDEV;public class AplicacionCompuDEV {
+package com.roman31X.aplicaionCompuDEV;
+
+public class AplicacionCompuDEV {
 }
