@@ -28,7 +28,7 @@ public class Orden {
 
     public void mostrarOrden(){
         System.out.println("|------------------------------------[ORDEN #"+idOrden+"]----------------------------------------|");
-        System.out.println("|------------------------------[Total de computadoras]---------------------------------|");
         computadoras.forEach(System.out::println);
+        System.out.println();
     }
 }

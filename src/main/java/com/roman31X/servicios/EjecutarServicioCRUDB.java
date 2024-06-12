@@ -72,7 +72,7 @@ public class EjecutarServicioCRUDB implements ServiciosCRUDB{
     public boolean eliminarOrden(Scanner consola, List<Orden> pedidos) {
         if(!pedidos.isEmpty()){
             System.out.println("|--------ELIMINACIÓN POR ID DE ORDEN--------|");
-            System.out.println("Ingrese ID a eliminar:");
+            System.out.print("Ingrese ID a eliminar:");
             var id = Integer.parseInt(consola.nextLine());
             var logrado = false;
             for (Orden orden : pedidos) {
@@ -108,4 +108,5 @@ public class EjecutarServicioCRUDB implements ServiciosCRUDB{
         }
         return false;
     }
+
 }

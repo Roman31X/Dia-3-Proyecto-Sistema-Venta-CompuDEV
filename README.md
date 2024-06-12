@@ -50,12 +50,12 @@ Se aplicarán conceptos fundamentales con java tales como:
 ## FUNCIONALIDAD DEL APLICATIVO
 Permitirá al usuario realizar operaciones básicas de un CRUD a una base de 
 datos local List:
-- [x] C - Registrar Persona
-- [x] R - Listar Personas
-- [x] U - Actualizar datos de Persona
-- [x] D - Eliminar Persona de la Lista
+- [x] C - Registrar Orden
+- [x] R - Listar Orden
+- [x] U - Actualizar próxima actualización
+- [x] D - Eliminar Orden de la Lista
 - Extra:
-- [x] Buscar Persona por ID
+- [x] Buscar Orden por ID
 - Por último, el usuario podrá salir de la aplicación si asi lo desee.
 
 
