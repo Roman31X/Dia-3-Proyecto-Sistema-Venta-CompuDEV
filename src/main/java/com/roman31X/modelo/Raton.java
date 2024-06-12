@@ -23,8 +23,7 @@ public class Raton extends DispositivoEntrada{
 
     @Override
     public String toString() {
-        return "Ratón: [" +
-                "ID Ratón: [" + idRaton +
+        return "ID Ratón:   [" + idRaton +
                 "] " + super.toString();
     }
 }

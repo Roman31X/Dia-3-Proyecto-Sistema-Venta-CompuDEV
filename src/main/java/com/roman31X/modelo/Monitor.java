@@ -34,8 +34,7 @@ public class Monitor {
 
     @Override
     public String toString() {
-        return "Monitor: [ " +
-                " ID Monitor: [" + idMonitor +
+        return "ID Monitor: [" + idMonitor +
                 "] Marca: [" + marca +
                 "] Tamaño: [" + tamanio +
                 ']';
