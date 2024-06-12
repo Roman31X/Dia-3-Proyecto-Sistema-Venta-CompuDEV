@@ -1,26 +1,30 @@
 package com.roman31X.aplicaionCompuDEV;
 
-import com.roman31X.modelo.Computadora;
-import com.roman31X.modelo.Monitor;
-import com.roman31X.modelo.Raton;
-import com.roman31X.modelo.Teclado;
+import com.roman31X.servicios.Orden;
+import java.util.ArrayList;
+import java.util.List;
+import java.util.Scanner;
+import static com.roman31X.controlador.ControladorMenu.ejecutarOperacion;
+import static com.roman31X.vista.MensajesMenu.opcionesMenu;
 
 public class AplicacionCompuDEV {
+
     public static void main(String[] args) {
 
-        Raton ratonLenovo  = new Raton("USB","Lenovo");
-        System.out.println(ratonLenovo);
-        Teclado tecladoLenovo = new Teclado("Bluetooth","Lenovo");
-        System.out.println(tecladoLenovo);
-        Monitor monitorLenovo = new Monitor("Lenovo",27);
-        System.out.println(monitorLenovo);
+        var consola = new Scanner(System.in);
+        var salir = false;
+        List<Orden> ordenes = new ArrayList<>();
 
-        System.out.println();
-        Computadora computadoraLenovo = new Computadora("Computador Lenovo",
-                monitorLenovo,
-                tecladoLenovo,
-                ratonLenovo);
+        while (!salir) {
+            try {
+                var opcion = opcionesMenu(consola);
+                salir = ejecutarOperacion(opcion, consola, ordenes);
+                System.out.println();
+            } catch (Exception e) {
+                System.out.println("Error al digitar una opción del menú: " + e.getMessage());
+            }
+        }
 
-        System.out.println(computadoraLenovo);
     }
+
 }
