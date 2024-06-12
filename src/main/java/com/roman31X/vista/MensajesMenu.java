@@ -8,8 +8,8 @@ public class MensajesMenu {
                          |--------------------------|
                          | SISTEMA ORDENES COMPUDEV |
                          |--------------------------|
-                         | [1] - REGISTRAR ORDEN    |
-                         | [2] - LISTAR ORDENES     |
+                         | [1] - LISTAR ORDEN       |
+                         | [2] - REGISTRAR ORDENES  |
                          | [3] - ACTUALIZAR ORDEN   |
                          | [4] - ELIMINAR ORDEN     |
                          | [5] - BUSCAR ORDEN X ID  |

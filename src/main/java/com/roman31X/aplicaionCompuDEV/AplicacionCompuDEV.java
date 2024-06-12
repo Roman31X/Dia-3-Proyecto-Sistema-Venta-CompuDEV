@@ -13,12 +13,12 @@ public class AplicacionCompuDEV {
 
         var consola = new Scanner(System.in);
         var salir = false;
-        List<Orden> ordenes = new ArrayList<>();
+        List<Orden> pedidos = new ArrayList<>();
 
         while (!salir) {
             try {
                 var opcion = opcionesMenu(consola);
-                salir = ejecutarOperacion(opcion, consola, ordenes);
+                salir = ejecutarOperacion(opcion, consola, pedidos);
                 System.out.println();
             } catch (Exception e) {
                 System.out.println("Error al digitar una opción del menú: " + e.getMessage());
