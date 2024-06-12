@@ -4,14 +4,12 @@ import java.util.List;
 import java.util.Scanner;
 
 public interface ServiciosCRUDB {
-    void listarOrden(List<Orden> ordenes);
+    void listarOrden(List<Orden> pedidos);
 
-    boolean agregarOrden(Scanner consola, List<Orden> ordenes);
+    boolean agregarOrden(Scanner consola, List<Orden> pedidos);
 
-    boolean actualizarOrden(Scanner consola, List<Orden> ordenes);
+    boolean eliminarOrden(Scanner consola, List<Orden> pedidos);
 
-    boolean eliminarOrden(Scanner consola, List<Orden> ordenes);
-
-    boolean buscarOrden(Scanner consola, List<Orden> ordenes);
+    boolean buscarOrden(Scanner consola, List<Orden> pedidos);
 
 }

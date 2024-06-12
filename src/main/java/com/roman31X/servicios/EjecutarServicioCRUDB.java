@@ -21,7 +21,6 @@ public class EjecutarServicioCRUDB implements ServiciosCRUDB{
             for (Orden orden : pedidos) {
                 orden.mostrarOrden();
             }
-            //pedidos.forEach(System.out::println);
         }else{
             System.out.println("|----La lista aun esta vacía debe registrar  una orden Primero----|");
         }
@@ -31,9 +30,9 @@ public class EjecutarServicioCRUDB implements ServiciosCRUDB{
     public boolean agregarOrden(Scanner consola, List<Orden> pedidos) {
         System.out.print("Ingrese cuantos computadores agregar a esta orden: ");
         var cantidadComputador =  Integer.parseInt(consola.nextLine());
-        var orden = new Orden();
 
         if(cantidadComputador > 0){
+            var orden = new Orden();
             for (int i = 1; i <= cantidadComputador; i++) {
                 System.out.print("|---------REGISTRO DEL COMPUTADOR #"+i+"---------|\n");
                 System.out.print("| Ingrese nombre del computador: ");
@@ -70,18 +69,30 @@ public class EjecutarServicioCRUDB implements ServiciosCRUDB{
     }
 
     @Override
-    public boolean actualizarOrden(Scanner consola, List<Orden> ordenes) {
+    public boolean eliminarOrden(Scanner consola, List<Orden> pedidos) {
+        if(!pedidos.isEmpty()){
+            System.out.println("|--------ELIMINACIÓN POR ID DE ORDEN--------|");
+            System.out.println("Ingrese ID a eliminar:");
+            var id = Integer.parseInt(consola.nextLine());
+            var logrado = false;
+            for (Orden orden : pedidos) {
+                if(orden.getIdOrden() == id){
+                    System.out.print("| Se elimino a: ");
+                    orden.mostrarOrden();
+                    pedidos.remove(orden);
+                    logrado = true;
+                    break;
+                }
+            }
+            return true;
+        }
 
+        System.out.println("|----La lista aun esta vacía debe registrar primero-----|");
         return false;
     }
 
     @Override
-    public boolean eliminarOrden(Scanner consola, List<Orden> ordenes) {
-        return false;
-    }
-
-    @Override
-    public boolean buscarOrden(Scanner consola, List<Orden> ordenes) {
+    public boolean buscarOrden(Scanner consola, List<Orden> pedidos) {
         return false;
     }
 }

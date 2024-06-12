@@ -18,6 +18,14 @@ public class Orden {
         computadoras.add(computadora);
     }
 
+    public int getIdOrden() {
+        return idOrden;
+    }
+
+    public List<Computadora> getComputadoras() {
+        return computadoras;
+    }
+
     public void mostrarOrden(){
         System.out.println("|------------------------------------[ORDEN #"+idOrden+"]----------------------------------------|");
         System.out.println("|------------------------------[Total de computadoras]---------------------------------|");

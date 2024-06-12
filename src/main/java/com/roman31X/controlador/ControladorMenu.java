@@ -16,19 +16,17 @@ public class ControladorMenu {
                 accion.listarOrden(pedidos);
             }
             case 2 -> {
-                var pedido = accion.agregarOrden(consola,pedidos);
-                System.out.println((pedido)?"|****R E G I S T R O--E X I T O S O****|":"|****R E G I S T R O--F A L L I D O****|");
+                var pedidoRegistro = accion.agregarOrden(consola,pedidos);
+                System.out.println((pedidoRegistro)?"|****R E G I S T R O--E X I T O S O****|":"|****R E G I S T R O--F A L L I D O****|");
             }
             case 3 -> {
-                accion.actualizarOrden(consola, pedidos);
+                var pedidoEliminar = accion.eliminarOrden(consola, pedidos);
+                System.out.println((pedidoEliminar)?"|****E L I M I N A C I Ó N--E X I T O S O****|":"|****E L I M I N A C I Ó N--F A L L I D O****|");
             }
-            case 4 -> {
-                accion.eliminarOrden(consola, pedidos);
-            }
-            case 5 ->{
+            case 4 ->{
                 accion.buscarOrden(consola, pedidos);
             }
-            case 6 -> {
+            case 5 -> {
                 mensajeSalida();
                 return true;
             }
