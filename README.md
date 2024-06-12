@@ -1,4 +1,4 @@
-# Dia-3-Proyecto-Sistema-Venta-CompuDEV con Java
+# Dia-3-Proyecto-Sistema-Venta-CompuDEV con Java - V1.0.0
 
 Para el desarrollo de este proyecto se debe tener en cuentas los 
 siguientes puntos:
@@ -47,6 +47,15 @@ Se aplicarán conceptos fundamentales con java tales como:
 - [x] Condicionales como if/else y switch.
 - [x] Manejo de ciclos como forEach y while.
 
-
+## FUNCIONALIDAD DEL APLICATIVO
+Permitirá al usuario realizar operaciones básicas de un CRUD a una base de 
+datos local List:
+- [x] C - Registrar Persona
+- [x] R - Listar Personas
+- [x] U - Actualizar datos de Persona
+- [x] D - Eliminar Persona de la Lista
+- Extra:
+- [x] Buscar Persona por ID
+- Por último, el usuario podrá salir de la aplicación si asi lo desee.
 
 

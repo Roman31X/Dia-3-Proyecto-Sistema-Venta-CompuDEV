@@ -22,7 +22,7 @@ public class EjecutarServicioCRUDB implements ServiciosCRUDB{
                 orden.mostrarOrden();
             }
         }else{
-            System.out.println("|----La lista aun esta vacía debe registrar  una orden Primero----|");
+            System.out.println("|----La lista aun esta vacía debe registrar una orden Primero----|");
         }
     }
 
@@ -77,7 +77,7 @@ public class EjecutarServicioCRUDB implements ServiciosCRUDB{
             var logrado = false;
             for (Orden orden : pedidos) {
                 if(orden.getIdOrden() == id){
-                    System.out.print("| Se elimino a: ");
+                    System.out.println("| Se elimino a: ");
                     orden.mostrarOrden();
                     pedidos.remove(orden);
                     logrado = true;
@@ -93,6 +93,19 @@ public class EjecutarServicioCRUDB implements ServiciosCRUDB{
 
     @Override
     public boolean buscarOrden(Scanner consola, List<Orden> pedidos) {
+        if(!pedidos.isEmpty()){
+            System.out.println("|--------BUSCAR ORDEN POR ID--------|");
+            System.out.print("| Ingrese ID:");
+            var id = Integer.parseInt(consola.nextLine());
+            for (Orden orden : pedidos) {
+                if(orden.getIdOrden() == id){
+                    orden.mostrarOrden();
+                    return true;
+                }
+            }
+        }else{
+            System.out.println("|----La lista aun esta vacía debe registrar primero-----|");
+        }
         return false;
     }
 }
