@@ -9,27 +9,28 @@ siguientes puntos:
 ## ¿Qué practicas implementaré en este proyecto?
 
 - [x] POO - Programación Orientada a Objetos
-- Reforzando conceptos de los cuatro pilares de la programación.
-- Creando código más limpio, mantenible y escalable.
+  - Reforzando conceptos de los cuatro pilares de la programación.
+  - Creando código más limpio, mantenible y escalable.
 
 - [x] Principios SOLID
-- Fundamental en el desarrollo de software orientado a objetos.
-- Proporcionando un marco para crear código más limpio,
+  - Fundamental en el desarrollo de software orientado a objetos.
+  - Proporcionando un marco para crear código más limpio,
 
 - [x] Principio de Modularidad
-- Designar tareas o responsabilidades en clases y capas.
+  - Designar tareas o responsabilidades en clases y capas.
 
 - [x] Clean Code
-- Para un código limpio.
-- Seguir las convenciones de nomenclatura y estilo de Java.
+  - Para un código limpio.
+  - Seguir las convenciones de nomenclatura y estilo de Java.
 
 - [x] Estructura MVC
-- Para asignar responsabilidades en capas.
-- Permitir escalabilidad el código.
+  - Para asignar responsabilidades en capas.
+  - Permitir escalabilidad el código.
 
 - [x] Estilo camelCase
-- Estilo de escritura que se aplica a frases o palabras compuestas.
-- El nombre se debe a que las mayúsculas a lo largo de una palabra en CamelCase se asemejan a las jorobas de un
+  - Estilo de escritura que se aplica a frases o palabras compuestas.
+  - El nombre se debe a que las mayúsculas a lo largo de una palabra 
+  en CamelCase se asemejan a las jorobas de un camello.
 
 ## ¿En qué consiste la aplicación a desarrollar?
 
